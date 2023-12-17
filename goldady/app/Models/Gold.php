@@ -21,5 +21,4 @@ class Gold extends Model
         return $this->hasMany(Transaction::class, 'GoldID');
     }
 
-    // Add any additional methods or relationships
 }

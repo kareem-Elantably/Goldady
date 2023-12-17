@@ -24,4 +24,5 @@ class User extends Model
         return $this->hasMany(Transaction::class, 'UserID');
     }
 
+
 }

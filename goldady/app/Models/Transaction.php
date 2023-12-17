@@ -27,5 +27,4 @@ class Transaction extends Model
         return $this->belongsTo(Safe::class, 'SafeID');
     }
 
-    // Add any additional methods or relationships
 }
