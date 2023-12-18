@@ -3,6 +3,10 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\SafeController;
+use App\Http\Controllers\GoldController;
+use App\Http\Controllers\TransactionController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -19,5 +23,11 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+
+
+Route::apiResource('safes', SafeController::class);
+
 Route::apiResource('users', UserController::class);
+Route::apiResource('transactions', TransactionController::class);
+Route::apiResource('golds', GoldController::class);
 

@@ -9,7 +9,7 @@ class Safe extends Model
     protected $primaryKey = 'SafeID';
     public $timestamps = false;
 
-    protected $fillable = ['Type', 'Location', 'Capacity'];
+    protected $fillable = ['SafeID','Type', 'Capacity'];
 
     public function golds()
     {
